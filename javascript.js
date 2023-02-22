@@ -36,7 +36,7 @@ console.log(indexOfOver)
 
 
 const stringThree = "Never gonna give you up never gonna let you down";
-const lastIndex = stringThree.lastIndexOf();
+const lastIndex = stringThree.lastIndexOf('never');
 
 console.log(lastIndex)
 
@@ -68,9 +68,8 @@ const lastName = "curtis"
 const firstName = "ryan"
 const lastName = "curtis"
 
-const magic = firstName + " " + (lastName.slice(0, 1)) + "."
 
-console.log(magic.toUpperCase())
+console.log((firstName.charAt(0).toUpperCase() + firstName.slice(1)) + " " + (lastName.slice(0, 1).toUpperCase()) + ".")
 
 
 
